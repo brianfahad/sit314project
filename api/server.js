@@ -9,7 +9,7 @@ const Light = require('./Light.js');
 
 // Connect to db
 mongoose.connect(
-    'mongodb+srv://bfahad:sit314project@sit314-project.aoj5t.mongodb.net/sit314-project?retryWrites=true&w=majority',
+    'mongo-url',
     { useNewUrlParser: true, useCreateIndex: true, }
 );
 mongoose.connection.on('error' , console.error.bind(console, 'Connection error: '));
